@@ -19,7 +19,7 @@ namespace VatsaCart.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        public ViewResult ListOfAllItems()
+        public IActionResult ListOfAllItems()
         {
             //ViewBag.CurrentCategory = "Sports";
             //return View(_itemRepository.AllItems);------way1
