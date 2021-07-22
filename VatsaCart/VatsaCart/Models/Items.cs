@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,6 +8,7 @@ namespace VatsaCart.Models
 {
     public class Items
     {
+        [Key]
         public int ItemId { get; set; }
         public string ItemName { get; set; }
         public string ShortDescription { get; set; }
