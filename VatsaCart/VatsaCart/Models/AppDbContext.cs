@@ -133,8 +133,7 @@ namespace VatsaCart.Models
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/peachpie.jpg",
                 InStock = false,
                 IsItemOfTheWeek = false,
-                ImageThumbnailUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/peachpiesmall.jpg",
-              
+                ImageThumbnailUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/peachpiesmall.jpg",            
             });
 
             modelBuilder.Entity<Items>().HasData(new Items
