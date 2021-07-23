@@ -30,5 +30,15 @@ namespace VatsaCart.Controllers
             itemsListViewModel.CurrentCategory = "TestDataPass";
             return View(itemsListViewModel);
         }
+
+        public IActionResult Details(int id)
+        {
+            var item = _itemRepository.GetItemById(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return View(item);
+        }
     }
 }
