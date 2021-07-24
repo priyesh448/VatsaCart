@@ -2,10 +2,72 @@
 
 namespace VatsaCart.Migrations
 {
-    public partial class SeedInitialData : Migration
+    public partial class changingamounttointinshoppingcart1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    CategoryId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CategoryName = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.CategoryId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Items",
+                columns: table => new
+                {
+                    ItemId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ItemName = table.Column<string>(nullable: true),
+                    ShortDescription = table.Column<string>(nullable: true),
+                    LongDescription = table.Column<string>(nullable: true),
+                    Price = table.Column<decimal>(nullable: false),
+                    ImageUrl = table.Column<string>(nullable: true),
+                    ImageThumbnailUrl = table.Column<string>(nullable: true),
+                    IsItemOfTheWeek = table.Column<bool>(nullable: false),
+                    InStock = table.Column<bool>(nullable: false),
+                    CategoryId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Items", x => x.ItemId);
+                    table.ForeignKey(
+                        name: "FK_Items_Categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "Categories",
+                        principalColumn: "CategoryId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ShoppingCartItems",
+                columns: table => new
+                {
+                    ShoppingCartItemId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ItemsItemId = table.Column<int>(nullable: true),
+                    Amount = table.Column<int>(nullable: false),
+                    ShoppingCartId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ShoppingCartItems", x => x.ShoppingCartItemId);
+                    table.ForeignKey(
+                        name: "FK_ShoppingCartItems_Items_ItemsItemId",
+                        column: x => x.ItemsItemId,
+                        principalTable: "Items",
+                        principalColumn: "ItemId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "CategoryId", "CategoryName", "Description" },
@@ -38,79 +100,28 @@ namespace VatsaCart.Migrations
                     { 6, 3, "https://gillcleerenpluralsight.blob.core.windows.net/files/cranberrypiesmall.jpg", "https://gillcleerenpluralsight.blob.core.windows.net/files/cranberrypie.jpg", true, false, "Cranberry Pie", "Icing carrot cake jelly-o cheesecake. Sweet roll marzipan marshmallow toffee brownie brownie candy tootsie roll. Chocolate cake gingerbread tootsie roll oat cake pie chocolate bar cookie dragée brownie. Lollipop cotton candy cake bear claw oat cake. Dragée candy canes dessert tart. Marzipan dragée gummies lollipop jujubes chocolate bar candy canes. Icing gingerbread chupa chups cotton candy cookie sweet icing bonbon gummies. Gummies lollipop brownie biscuit danish chocolate cake. Danish powder cookie macaroon chocolate donut tart. Carrot cake dragée croissant lemon drops liquorice lemon drops cookie lollipop toffee. Carrot cake carrot cake liquorice sugar plum topping bonbon pie muffin jujubes. Jelly pastry wafer tart caramels bear claw. Tiramisu tart pie cake danish lemon drops. Brownie cupcake dragée gummies.", 17.95m, "A Christmas favorite" },
                     { 8, 3, "https://gillcleerenpluralsight.blob.core.windows.net/files/pumpkinpiesmall.jpg", "https://gillcleerenpluralsight.blob.core.windows.net/files/pumpkinpie.jpg", true, true, "Pumpkin Pie", "Icing carrot cake jelly-o cheesecake. Sweet roll marzipan marshmallow toffee brownie brownie candy tootsie roll. Chocolate cake gingerbread tootsie roll oat cake pie chocolate bar cookie dragée brownie. Lollipop cotton candy cake bear claw oat cake. Dragée candy canes dessert tart. Marzipan dragée gummies lollipop jujubes chocolate bar candy canes. Icing gingerbread chupa chups cotton candy cookie sweet icing bonbon gummies. Gummies lollipop brownie biscuit danish chocolate cake. Danish powder cookie macaroon chocolate donut tart. Carrot cake dragée croissant lemon drops liquorice lemon drops cookie lollipop toffee. Carrot cake carrot cake liquorice sugar plum topping bonbon pie muffin jujubes. Jelly pastry wafer tart caramels bear claw. Tiramisu tart pie cake danish lemon drops. Brownie cupcake dragée gummies.", 12.95m, "Our Halloween favorite" }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Items_CategoryId",
+                table: "Items",
+                column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ShoppingCartItems_ItemsItemId",
+                table: "ShoppingCartItems",
+                column: "ItemsItemId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 1);
+            migrationBuilder.DropTable(
+                name: "ShoppingCartItems");
 
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 2);
+            migrationBuilder.DropTable(
+                name: "Items");
 
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 3);
-
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 4);
-
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 5);
-
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 6);
-
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 7);
-
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 8);
-
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 9);
-
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 10);
-
-            migrationBuilder.DeleteData(
-                table: "Items",
-                keyColumn: "ItemId",
-                keyValue: 11);
-
-            migrationBuilder.DeleteData(
-                table: "Categories",
-                keyColumn: "CategoryId",
-                keyValue: 1);
-
-            migrationBuilder.DeleteData(
-                table: "Categories",
-                keyColumn: "CategoryId",
-                keyValue: 2);
-
-            migrationBuilder.DeleteData(
-                table: "Categories",
-                keyColumn: "CategoryId",
-                keyValue: 3);
+            migrationBuilder.DropTable(
+                name: "Categories");
         }
     }
 }

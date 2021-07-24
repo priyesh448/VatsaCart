@@ -14,6 +14,7 @@ namespace VatsaCart.Models
         }
         public DbSet<Items> Items { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
         //seeding initial data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
