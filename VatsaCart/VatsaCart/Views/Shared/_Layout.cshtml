@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿    <!DOCTYPE html>
 
 <html>
 <head>
@@ -26,12 +26,15 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li><a asp-controller="Item" asp-action="ListOfAllItems">Pies</a></li>
+                        <li><a asp-controller="Item" asp-action="ListOfAllItems">Items</a></li>
+                        @await Component.InvokeAsync("CategoryMenu")
+                        <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                        @await Component.InvokeAsync("ShoppingCartSummary")
                     </ul>
                 </div>
             </div>
         </nav>
-
+        @*<a href="C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\Views\Shared\_Layout.cshtml">C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\Views\Shared\_Layout.cshtml</a>*@
         <div class="row">
             <div class="col-md-3">
                 <p class="lead">

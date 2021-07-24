@@ -28,7 +28,6 @@ C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Item\ListOfAllItems.cshtml.g.cs
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\VatsaCart.RazorTargetAssemblyInfo.cs
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\VatsaCart.Views.pdb
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\VatsaCart.csproj.AssemblyReference.cache
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -53,3 +52,10 @@ C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\bin\Debug\netcoreapp3.1\
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Item\Details.cshtml.g.cs
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ItemCard.cshtml.g.cs
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Carousel.cshtml.g.cs
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\ShoppingCart\Index.cshtml.g.cs
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\VatsaCart.csproj.AssemblyReference.cache
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs

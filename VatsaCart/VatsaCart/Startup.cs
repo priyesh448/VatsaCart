@@ -30,6 +30,10 @@ namespace VatsaCart
 
             services.AddScoped<IItemRepository, ItemsRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));//creating a scoped shopping cart and check if cart is already existing in session,if not pass the session and and get returned Shoppingcart
+            services.AddHttpContextAccessor();
+            services.AddSession();
+
             services.AddControllersWithViews();
         }
 
@@ -42,11 +46,9 @@ namespace VatsaCart
             }
 
             app.UseHttpsRedirection();//middle ware to redirect http to https
-
             app.UseStaticFiles();// middle ware to serve static file eg.images,jsetc, By default it will search in wwwroot folder for static files
-
+            app.UseSession();//must come before userouting
             //UseRouting() & UseEndpoints are middleware enables mvc to respond to incoming request.
-
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
