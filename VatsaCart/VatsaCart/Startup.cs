@@ -30,6 +30,7 @@ namespace VatsaCart
 
             services.AddScoped<IItemRepository, ItemsRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));//creating a scoped shopping cart and check if cart is already existing in session,if not pass the session and and get returned Shoppingcart
             services.AddHttpContextAccessor();
             services.AddSession();

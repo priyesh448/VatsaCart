@@ -59,3 +59,5 @@ C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Order\Checkout.cshtml.g.cs
+C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Order\CheckoutComplete.cshtml.g.cs
