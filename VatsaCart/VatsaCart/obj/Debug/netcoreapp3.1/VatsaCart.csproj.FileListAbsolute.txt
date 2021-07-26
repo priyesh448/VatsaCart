@@ -167,11 +167,3 @@ C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\bin\Debug\netcoreapp3.1\
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\52265900\Desktop\VatsaCart\VatsaCart\VatsaCart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
